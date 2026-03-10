@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>games</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #070b12;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: rgba(255,255,255,0.8);
+      padding: 60px 0 80px;
+    }
+
+    /* Grid background */
+    .grid {
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    h1 {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+      margin-bottom: 32px;
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .list a {
+      display: block;
+      padding: 10px 14px;
+      border-radius: 7px;
+      text-decoration: none;
+      color: rgba(255,255,255,0.75);
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      transition: background 0.15s, color 0.15s;
+      animation: fadeUp 0.4s ease both;
+    }
+
+    .list a:hover {
+      background: rgba(255,255,255,0.06);
+      color: rgba(255,255,255,1);
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(4px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="container">
+    <h1>Games</h1>
+    <div class="list">
+      <a href="/amanda-the-adventurer" style="animation-delay:0.02s">amanda-the-adventurer</a>
+      <a href="/andys-apple-farm" style="animation-delay:0.04s">andys-apple-farm</a>
+      <a href="/baldi-plus" style="animation-delay:0.06s">baldi-plus</a>
+      <a href="/baldi-remaster" style="animation-delay:0.08s">baldi-remaster</a>
+      <a href="/bendy" style="animation-delay:0.10s">bendy</a>
+      <a href="/bergentruck" style="animation-delay:0.12s">bergentruck</a>
+      <a href="/bloodmoney" style="animation-delay:0.14s">bloodmoney</a>
+      <a href="/buckshot-roulette" style="animation-delay:0.16s">buckshot-roulette</a>
+      <a href="/class-of-09" style="animation-delay:0.18s">class-of-09</a>
+      <a href="/cuphead" style="animation-delay:0.20s">cuphead</a>
+      <a href="/dead-plate" style="animation-delay:0.22s">dead-plate</a>
+      <a href="/deadseat" style="animation-delay:0.24s">deadseat</a>
+      <a href="/deltatraveler" style="animation-delay:0.26s">deltatraveler</a>
+      <a href="/donottakethiscathome" style="animation-delay:0.28s">donottakethiscathome</a>
+      <a href="/fears-to-fathom/home-alone" style="animation-delay:0.30s">fears-to-fathom/home-alone</a>
+      <a href="/getting-over-it" style="animation-delay:0.32s">getting-over-it</a>
+      <a href="/happy-sheepies" style="animation-delay:0.34s">happy-sheepies</a>
+      <a href="/hotline-miami" style="animation-delay:0.36s">hotline-miami</a>
+      <a href="/human-expenditure-program" style="animation-delay:0.38s">human-expenditure-program</a>
+      <a href="/jelly-drift" style="animation-delay:0.40s">jelly-drift</a>
+      <a href="/karlson" style="animation-delay:0.42s">karlson</a>
+      <a href="/kindergarten" style="animation-delay:0.44s">kindergarten</a>
+      <a href="/lacysflashgames" style="animation-delay:0.46s">lacysflashgames</a>
+      <a href="/milkman-karlson" style="animation-delay:0.48s">milkman-karlson</a>
+      <a href="/minesweeperplus" style="animation-delay:0.50s">minesweeperplus</a>
+      <a href="/omori-fixed" style="animation-delay:0.52s">omori-fixed</a>
+      <a href="/people-playground" style="animation-delay:0.54s">people-playground</a>
+      <a href="/pizza-tower" style="animation-delay:0.56s">pizza-tower</a>
+      <a href="/raft" style="animation-delay:0.58s">raft</a>
+      <a href="/repo" style="animation-delay:0.60s">repo</a>
+      <a href="/schoolboy-runaway" style="animation-delay:0.62s">schoolboy-runaway</a>
+      <a href="/slender" style="animation-delay:0.64s">slender</a>
+      <a href="/sonic.exe" style="animation-delay:0.66s">sonic.exe</a>
+      <a href="/speed-stars" style="animation-delay:0.68s">speed-stars</a>
+      <a href="/tattletail" style="animation-delay:0.70s">tattletail</a>
+      <a href="/thats-not-my-neighbor" style="animation-delay:0.72s">thats-not-my-neighbor</a>
+      <a href="/the-man-in-the-window" style="animation-delay:0.74s">the-man-in-the-window</a>
+      <a href="/ultrakill" style="animation-delay:0.76s">ultrakill</a>
+      <a href="/undertale-yellow" style="animation-delay:0.78s">undertale-yellow</a>
+      <a href="/web-fishing" style="animation-delay:0.80s">web-fishing</a>
+      <a href="/yandere-simulator" style="animation-delay:0.82s">yandere-simulator</a>
+      <a href="/yume-nikki" style="animation-delay:0.84s">yume-nikki</a>
+    </div>
+  </div>
+</body>
+</html>
